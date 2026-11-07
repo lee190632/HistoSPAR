@@ -1,0 +1,26 @@
+name: aipatho
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - cudatoolkit=12.1
+  - pytorch=2.5.1
+  - torchvision>=0.20.1
+  - torchaudio
+  - numpy>=1.24.0
+  - scipy>=1.11.0
+  - pandas>=2.0.0
+  - scikit-learn>=1.3.0
+  - pyyaml>=6.0
+  - pip:
+      - scanpy==1.10.3
+      - gseapy==1.1.11
+      - openslide-python>=1.3.0
+      - timm>=1.0.0
+# Note on Upstream Pipelines:
+# - Space Ranger v4.0.1 (10x Genomics standalone binary) is used for Visium HD raw count extraction and spatial registration.
+# - UNI2-h (MahmoodLab/UNI2-h) ViT-Giant model weights are loaded via timm/HuggingFace.

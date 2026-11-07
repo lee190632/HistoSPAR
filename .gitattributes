@@ -1,0 +1,8 @@
+* text=auto
+*.md text eol=lf
+*.yml text eol=lf
+*.cff text eol=lf
+*.json text eol=lf
+*.gmt text eol=lf
+*.csv text eol=lf
+*.png binary
